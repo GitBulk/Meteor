@@ -1,14 +1,29 @@
 <head>
-  <title>Football</title>
+	<title>Football</title>
 </head>
 
 <body>
-  <h1>Welcome to Meteor!</h1>
-
-  {{> hello}}
+	{{> teamsranking }}
+	{{> addTeamForm }}
 </body>
 
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
+<template name="teamsranking">
+	<ul>
+		{{#each showTeams}}
+			<li class="team {{selectedClass}}">{{name}}: {{score}}</li>
+		{{/each}}
+	</ul>
+	<input type="button" class="increment" value="Give points" />
+	<input type="button" class="decrement" value="Take points" />
+
+	{{#if showSelectedTeam}}
+		<div>Selected team: {{showSelectedTeam.name}}</div>
+	{{/if}}
+</template>
+
+<template name="addTeamForm">
+	<form>
+		<input type="text" name="teamName" />
+		<input type="submit" name="Add player" />
+	</form>
 </template>
