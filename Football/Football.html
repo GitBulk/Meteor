@@ -3,8 +3,11 @@
 </head>
 
 <body>
-	{{> teamsranking }}
-	{{> addTeamForm }}
+	{{> teamsranking}}
+	<br />
+	{{> addTeamForm}}
+	<br />
+	{{> loginButtons}}
 </body>
 
 <template name="teamsranking">
@@ -15,15 +18,17 @@
 	</ul>
 	<input type="button" class="increment" value="Give points" />
 	<input type="button" class="decrement" value="Take points" />
-
+	<input type="button" class="remove" value="Remove team" />
 	{{#if showSelectedTeam}}
 		<div>Selected team: {{showSelectedTeam.name}}</div>
 	{{/if}}
 </template>
 
 <template name="addTeamForm">
+	{{#if currentUser}}
 	<form>
 		<input type="text" name="teamName" />
 		<input type="submit" name="Add player" />
 	</form>
+	{{/if}}
 </template>

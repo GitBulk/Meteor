@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+Meteor.methods({
+    'Method 1': function() {
+        // code here
+    },
+    'Method 2': function(parameters) {
+        //var currentUserId = Meteor.userId();
+        // code here
+    }
+});
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<!-- <tabTrigger>hello</tabTrigger> -->
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

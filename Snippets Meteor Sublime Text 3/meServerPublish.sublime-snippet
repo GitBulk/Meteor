@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+Meteor.publish('publishedObject', function() {
+    // cannot use Meteor.userId() in publish
+    // var currentUserId = this.userId;
+    // console.log("From server, current user id: " + currentUserId);
+    // code here
+
+});
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<!-- <tabTrigger>hello</tabTrigger> -->
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
