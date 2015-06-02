@@ -1,0 +1,88 @@
+﻿Plugin Sublime Text 3
+
+1.Alignment
+Settings - user:
+
+{
+        // The mid-line characters to align in a multi-line selection, changing
+        // this to an empty array will disable mid-line alignment
+        "alignment_chars": [
+            "=", ":"
+        ],
+		"align_indent": true,
+}
+
+
+2.Bracket highlighter
+Settings - user:
+
+{
+    "bracket_styles": {
+        // This particular style is used to highlight
+        // unmatched bracket pairs. It is a special
+        // style.
+        "unmatched": {
+            "icon": "question",
+            "color": "brackethighlighter.unmatched",
+            "style": "highlight"
+        },
+        // User defined region styles
+        "curly": {
+            "icon": "curly_bracket",
+            "color": "brackethighlighter.curly",
+            "style": "highlight"
+        },
+        "round": {
+            "icon": "round_bracket",
+            "color": "brackethighlighter.round",
+            "style": "outline"
+        },
+        "square": {
+            "icon": "square_bracket",
+            "color": "brackethighlighter.square",
+            "style": "outline"
+        },
+        "angle": {
+            "icon": "angle_bracket",
+            "color": "brackethighlighter.angle",
+            "style": "outline"
+        },
+        "tag": {
+            "icon": "tag",
+            "color": "brackethighlighter.tag",
+            "style": "outline"
+        },
+        "single_quote": {
+            "icon": "single_quote",
+            "color": "brackethighlighter.quote",
+            "style": "outline"
+        },
+        "double_quote": {
+            "icon": "double_quote",
+            "color": "brackethighlighter.quote",
+            "style": "outline"
+        },
+        "regex": {
+            "icon": "regex",
+            "color": "brackethighlighter.quote",
+            "style": "outline"
+        }
+    }
+}
+
+3.DocBlockr
+Settings - User
+{
+        // The mid-line characters to align in a multi-line selection, changing
+        // this to an empty array will disable mid-line alignment
+        "alignment_chars": [
+            "=", ":"
+        ],
+		"align_indent": true,
+}
+
+4.SideBar
+No settings
+
+5.SublimeLinter
+No settings
